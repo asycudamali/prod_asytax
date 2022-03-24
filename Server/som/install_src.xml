@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--
+     **************************************************************************
+     * SOClass                                               Version: 2.0.235 *
+     *                                                                        *
+     * This software is the proprietary information of STRATEGY OBJECT.       *
+     * Use is subject to license terms.                                       *
+     *                                                                        *
+     * Copyright (c) 1996-2005                                STRATEGY OBJECT *
+     * All rights reserved.                           Wed, 05-Jan-2005, 17:15 *
+     **************************************************************************
+     
+-->
+<!DOCTYPE module SYSTEM "http://www.strategyobject.com/dtd/install.dtd">
+
+<module name="@ModuleBaseName@">
+  <property name="locale_dir" value="${so.installer.locale.dir}"/>
+  <property name="cfg_dir" value="${so.installer.config.dir}"/>
+
+  <!--
+    Copy files into server directory.
+  -->
+  <copy toDir="${so.installer.module.dir}">
+    <fileset dir="/modules">
+      <include name="**/*.jar"/>
+    </fileset>
+  </copy>
+
+  <!--
+    Properties for DB.
+  -->
+ <!-- <db manager="${gcf.drv_manager}"
+      url="${gcf.url}"
+      user="${gcf.user_name}"
+      password="${gcf.password}">
+    <GCF>
+      <table type="History" name="Historyun_asytax"/>
+      <table type="IED" name="IEDun_asytax"/>
+      <table type="Locks" name="Locksun_asytax"/>
+      <table type="Track" name="Trackun_asytax"/> -->
+ <!--   </GCF>
+    <appserver dbsource="jdbc/un.asytax.gcf" name="un.asytax.gcf">
+      <pool minPoolSize="1" maxPoolSize="-1" maxIdleTime="5"/>
+    </appserver>
+  </db>-->
+
+  <!--
+    Import into Kernel DB
+  -->
+  <system>
+    <!--
+      Modify config files
+    -->
+    <config name="properties">
+      <fileset dir="config">
+        <include name="**/*.properties"/>
+      </fileset>
+    </config>
+
+    <config name="language">
+      <fileset dir="lng">
+        <include name="**/*.properties"/>
+      </fileset>
+    </config>
+
+    <config name="format">
+      <fileset dir="format">
+        <include name="**/*.properties"/>
+      </fileset>
+    </config>
+
+		
+
+
+
+  </system>
+
+</module>

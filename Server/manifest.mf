@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Module: @ModuleBaseName@
+Module-Name: @ModuleFullName@
+Module-Type: @ModuleType@
+Module-License: @ModuleLicense@
+Module-Summary: @ModuleSummary@
+Module-Description: @ModuleDescription@
+Module-Specification-Version: @ModuleVersion@
+Module-Kernel-Dependencies:  SERVER/1 >= 2.2
+Module-Module-Dependencies: so.tes/1 >= 1.1.2,un.asygate/1 >= 1.0,un.asyref/1 >= 1.0
+Module-Install: un.asytax.module.UNModule
+ShowModuleVersion: true
+Class-Path: ext/asytax.jar
+Shared-Jar: asytax.jar
+Client-Jar: asytaxc.jar
+Server-Jar: asytaxs.jar
+

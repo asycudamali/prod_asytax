@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--
+     **************************************************************************
+     * SOClass                                               Version: 2.0.235 *
+     *                                                                        *
+     * This software is the proprietary information of STRATEGY OBJECT.       *
+     * Use is subject to license terms.                                       *
+     *                                                                        *
+     * Copyright (c) 1996-2005                                STRATEGY OBJECT *
+     * All rights reserved.                           Wed, 05-Jan-2005, 17:15 *
+     **************************************************************************
+     
+-->
+<!--
+    Document   : prop.xml
+    Created on : March 27, 2003, 4:02 PM
+    Author     : Ognian Konov
+    Description:
+        Purpose of the document follows.
+-->
+
+<properties>
+ <!--  <group type="connection">
+      <property name="gcf.drv_manager" from="driver" />
+      <property name="gcf.url" from="url"  default="xxxGCF.mod" />
+      <property name="gcf.user_name" from="user" />
+      <property name="gcf.password" from="password" />
+      <description><![CDATA[Connection to database Module GCF is required.
+This database is available. You can create new or use the same database.
+Then enter connection properties in this form.]]></description>
+   </group>-->
+
+</properties>
